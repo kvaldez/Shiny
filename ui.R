@@ -21,7 +21,11 @@ fluidPage(titlePanel('Welcome to Kristin\'s App'),
             label = 'On a scale of 1 to 30, how much do you like cheese?',
             value = 25, min = 1, max = 30),
           
-          plotOutput('cheese')
+          plotOutput('cheese'),
+          
+          checkboxGroupInput(inputId = 'colors',
+            label = 'What are your favorite colors?',
+            choices = c('Blue', 'Yellow', 'Red', 'Orange', 'Green'))
           )
 )
 

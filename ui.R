@@ -23,7 +23,6 @@ fluidPage(titlePanel('Welcome to Kristin\'s App'),
           
           plotOutput('cheese'),
           
-          ##below is currently not working###################
           radioButtons(inputId = 'colors',
             label = 'What is your favorite color?',
             choices = c('Blue', 'Yellow', 'Red', 'Orange', 'Green')),

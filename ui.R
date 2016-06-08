@@ -2,9 +2,9 @@ library(shiny)
 
 fluidPage(titlePanel('Welcome to Kristin\'s App'),
           
-          sidebarPanel(h1("This is a practice app to learn how to use Shiny"),
-                       h2("This writing should become increasingly smaller"),
-                       h3("This should be the smallest")),
+          sidebarPanel(h1('This is a practice app to learn how to use Shiny'),
+                       h2('This writing should become increasingly smaller'),
+                       h3('This should be the smallest')),
           
           #adds a slider, and creates a plot of random numbers.
           #the amount of random numbers is determined by the number entered.

@@ -5,8 +5,10 @@ function(input, output){
     plot(rnorm(input$well), main = title)})
   
   output$cheese = renderPlot({title = 'Here\'s a histogram of random numbers based on how much you like cheese'
-    hist(rnorm(input$cheese), main = title)})               
-  }
+    hist(rnorm(input$cheese), main = title)})  
+  
+  output$colors = renderText(paste('Your favorite color is: ', input$colors))
+}
   
 
   

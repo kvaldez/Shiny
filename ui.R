@@ -23,9 +23,13 @@ fluidPage(titlePanel('Welcome to Kristin\'s App'),
           
           plotOutput('cheese'),
           
-          checkboxGroupInput(inputId = 'colors',
-            label = 'What are your favorite colors?',
-            choices = c('Blue', 'Yellow', 'Red', 'Orange', 'Green'))
+          ##below is currently not working###################
+          radioButtons(inputId = 'colors',
+            label = 'What is your favorite color?',
+            choices = c('Blue', 'Yellow', 'Red', 'Orange', 'Green')),
+          
+          textOutput('colors')
+          
           )
 )
 
